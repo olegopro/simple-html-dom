@@ -5,9 +5,6 @@ use Symfony\Component\Dotenv\Dotenv;
 
 require_once './vendor/autoload.php';
 
-
-require './vendor/autoload.php';
-
 $dotenv = new Dotenv();
 $dotenv->load(__DIR__ . '/.env');
 
@@ -19,7 +16,6 @@ $password = $_SERVER['PASSWORD'] ?? '';
 
 
 $db = new PDO($dsn, $username, $password);
-
 $url = 'https://dezkrd23.ru/news/';
 
 
@@ -120,6 +116,7 @@ function getArticlesLinksFromCatalog($url)
 		echo $link_to_article->href . PHP_EOL;
 	}
 
+	//recursion
 	if ($next_link = $dom->findOneOrFalse('a.next.page-numbers')) {
 		getArticlesLinksFromCatalog($next_link->getAttribute('href'));
 	}
