@@ -1,0 +1,8 @@
+{
+  "require": {
+    "ext-pdo": "*",
+    "voku/simple_html_dom": "^4.8",
+    "ext-curl": "*",
+    "symfony/dotenv": "^6.1"
+  }
+}

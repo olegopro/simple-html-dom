@@ -1,0 +1,241 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "10140b1e1b7265c72ed65e76d836f307",
+    "packages": [
+        {
+            "name": "symfony/css-selector",
+            "version": "v6.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "0dd5e36b80e1de97f8f74ed7023ac2b837a36443"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/0dd5e36b80e1de97f8f74ed7023ac2b837a36443",
+                "reference": "0dd5e36b80e1de97f8f74ed7023ac2b837a36443",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Converts CSS selectors to XPath expressions",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/css-selector/tree/v6.1.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-06-27T17:24:16+00:00"
+        },
+        {
+            "name": "symfony/dotenv",
+            "version": "v6.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dotenv.git",
+                "reference": "568c11bcedf419e7e61f663912c3547b54de51df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/568c11bcedf419e7e61f663912c3547b54de51df",
+                "reference": "568c11bcedf419e7e61f663912c3547b54de51df",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "conflict": {
+                "symfony/console": "<5.4"
+            },
+            "require-dev": {
+                "symfony/console": "^5.4|^6.0",
+                "symfony/process": "^5.4|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Dotenv\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Registers environment variables from a .env file",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/dotenv/tree/v6.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-04-01T07:15:35+00:00"
+        },
+        {
+            "name": "voku/simple_html_dom",
+            "version": "4.8.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/simple_html_dom.git",
+                "reference": "1df7e9844eddbe190450c87f281e87bbd8d7f645"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/simple_html_dom/zipball/1df7e9844eddbe190450c87f281e87bbd8d7f645",
+                "reference": "1df7e9844eddbe190450c87f281e87bbd8d7f645",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-simplexml": "*",
+                "php": ">=7.0.0",
+                "symfony/css-selector": "~3.0 || ~4.0 || ~5.0 || ~6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
+            },
+            "suggest": {
+                "voku/portable-utf8": "If you need e.g. UTF-8 fixed output."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "voku\\helper\\": "src/voku/helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "dimabdc",
+                    "email": "support@titor.ru",
+                    "homepage": "http://github.com/dimabdc",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Lars Moelleken",
+                    "homepage": "http://www.moelleken.org/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple HTML DOM package.",
+            "homepage": "http://simplehtmldom.sourceforge.net/",
+            "keywords": [
+                "HTML Parser",
+                "dom",
+                "php dom"
+            ],
+            "support": {
+                "issues": "https://github.com/voku/simple_html_dom/issues",
+                "source": "https://github.com/voku/simple_html_dom/tree/4.8.6"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/moelleken",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/voku",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/voku",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/voku/simple_html_dom",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-06-09T05:48:45+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "ext-pdo": "*",
+        "ext-curl": "*"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
